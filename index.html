@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welt Raum</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header id="navbar">
+  <div class="logo">
+    <img src="./weltraum-removebg-preview.png" alt="Ramona Miko Logo" />
+  </div>
+
+  <div id="menu-icon" class="menu-icon">&#9776;</div>
+  
+  <nav class="menu" id="nav-menu">
+    <a href="#">Spiel</a>
+    <a href="#">Über Uns</a>
+    <a href="#">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <video id="bg-video" muted autoplay loop class="video-background">
+    <source src="./moon.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<section class="three-boxes">
+  <div class="box">
+    <img src="image1.jpg" alt="Image 1" />
+    <h3>box numero 1</h3>
+    <p>idk some description here</p>
+  </div>
+  <div class="box">
+    <img src="image2.jpg" alt="Image 2" />
+    <h3>box numero 2</h3>
+    <p>here too</p>
+  </div>
+  <div class="box">
+    <img src="image3.jpg" alt="Image 3" />
+    <h3>box numero 3</h3>
+    <p>and here too</p>
+  </div>
+</section>
+
+<section class="article-section">
+  <div class="article-container">
+    <img id="earth" src="./earth.avif" alt="">
+    <h1>WELTRAUM: Der Ruf von Lira IX</h1>
+    <p>
+      Im Jahr 2487, weit entfernt von der Erde, entdeckt die Menschheit einen geheimnisvollen Mond namens Lira IX. Die Oberfläche ist mit kristallinen Strukturen bedeckt, die im Sonnenlicht schimmern, und unter dem Eis verbirgt sich eine uralte Technologie – Überreste einer vergessenen Zivilisation.
+    </p>
+    <p>
+     In Mondschatten spielst du als Raumforscherin Kaela Vos, die im Auftrag der interstellaren Allianz auf Lira IX landet. Doch kaum angekommen, wird dein Team von einer unbekannten Macht angegriffen. Deine Mission: Überlebe, finde heraus, was mit der ersten Expedition passiert ist, und aktiviere das Herz des Mondes – eine mysteriöse Energiequelle, die ganze Galaxien beeinflussen kann.
+
+Mit deinem Exo-Anzug kämpfst du gegen feindliche Drohnen, navigierst durch unterirdische Ruinen und entschlüsselst uralte Schriften. Jede Entscheidung beeinflusst das Schicksal des Mondes – und vielleicht der gesamten Menschheit.
+    </p>
+  </div>
+</section>
+
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  const menuIcon = document.getElementById('menu-icon');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
